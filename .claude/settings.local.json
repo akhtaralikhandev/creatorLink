@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.prisma.io)",
+      "Bash(cd \"D:\\\\10 semester\\\\fiverr\\\\creatorlink\" && npx prisma generate 2>&1)",
+      "Bash(cd \"D:\\\\10 semester\\\\fiverr\\\\creatorlink\" && npm run db:seed 2>&1)"
+    ]
+  }
+}
