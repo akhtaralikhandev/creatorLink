@@ -10,7 +10,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { formatCurrency, formatDate, getInitials } from "@/lib/utils";
 import { Briefcase, CheckCircle2, Clock } from "lucide-react";
-import type { CollaborationStatus } from "@prisma/client";
+
+type CollaborationStatus = "ACTIVE" | "COMPLETED";
 
 interface PageProps {
   searchParams: Promise<{ status?: string }>;

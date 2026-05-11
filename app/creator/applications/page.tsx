@@ -10,7 +10,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { formatDate, formatCurrency, truncate } from "@/lib/utils";
 import { FileText, Building2, Calendar, DollarSign, Megaphone } from "lucide-react";
-import type { ApplicationStatus } from "@prisma/client";
+
+type ApplicationStatus = "PENDING" | "ACCEPTED" | "REJECTED";
 
 interface PageProps {
   searchParams: Promise<{ status?: string }>;

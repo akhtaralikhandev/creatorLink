@@ -10,7 +10,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { formatCurrency, formatDate } from "@/lib/utils";
 import { Megaphone, Plus } from "lucide-react";
-import type { CampaignStatus } from "@prisma/client";
+
+type CampaignStatus = "DRAFT" | "ACTIVE" | "CLOSED";
 
 interface PageProps {
   searchParams: Promise<{ status?: string; q?: string }>;

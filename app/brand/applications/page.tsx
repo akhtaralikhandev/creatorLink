@@ -12,7 +12,8 @@ import { Separator } from "@/components/ui/separator";
 import { formatDate, getInitials } from "@/lib/utils";
 import { ReviewApplicationButton } from "@/app/brand/campaigns/[id]/ReviewApplicationButton";
 import { Users, AtSign, Globe, Filter } from "lucide-react";
-import type { ApplicationStatus } from "@prisma/client";
+
+type ApplicationStatus = "PENDING" | "ACCEPTED" | "REJECTED";
 
 interface PageProps {
   searchParams: Promise<{ status?: string; campaign?: string }>;

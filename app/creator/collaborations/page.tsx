@@ -11,7 +11,8 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { formatCurrency, formatDate } from "@/lib/utils";
 import { Briefcase, CheckCircle2, Clock, DollarSign } from "lucide-react";
-import type { CollaborationStatus } from "@prisma/client";
+
+type CollaborationStatus = "ACTIVE" | "COMPLETED";
 
 interface PageProps {
   searchParams: Promise<{ status?: string }>;
